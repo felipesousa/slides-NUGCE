@@ -40,7 +40,7 @@ gulp.task('stylus', function(){
 
 // Call Imagemin
 gulp.task('imagemin', function() {
-	return gulp.src('src/img/**/*')
+	return gulp.src('src/img/**/*.*')
 		.pipe(plumber())
 		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
 		.pipe(gulp.dest('build/img'));

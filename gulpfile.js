@@ -19,8 +19,8 @@ gulp.task('jade', function(){
 
 gulp.task('notes', function(){
 	return gulp.src('src/js/vendor/notes/notes.html')
-			.pipe(gulp.dest('build/js/vendor/notes/'))
-})
+		.pipe(gulp.dest('build/js/vendor/notes/'));
+});
 
 // Call Uglify and Concat JS
 gulp.task('js', function(){
